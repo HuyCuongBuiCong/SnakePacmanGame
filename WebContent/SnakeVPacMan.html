@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="SnakeGame.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<style>
+#gameArea {
+	padding: 5px;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.PacMan {
+	display: none;
+}
+
+.Shit {
+	
+	display: incline;
+}
+}
+</style>
+
+<body onload="startGame()" />
+<div id="gameArea"></div>
+
+<div class="PacMan">
+	<img id="PacManCloseMounth" width="80" height="60"
+		src="Image/PacManCloseMount.png"> <img id="PacManOpenMounth"
+		width="80" height="60" src="Image/PacManOpenMount.png"> <img
+		id="SnakeShit1" width="80" height="90" src="Image/SnakeShit1.png">
+</div>
+<div class="Shit">
+	<img id="SnakeShit2" width="45" height="40" src="Image/SnakeShit2.png">
+	<span id='NumberOfShit'> 2</span>
+	<span> Snake Length: </span>
+	<span id = "SnakeLength"></span>
+</div>
+
+<div id = "EndGameDialog" class="dialog">
+	<p id="EndGameDialogText"> </p>
+</div>
+
+
+</body>
+</html>
